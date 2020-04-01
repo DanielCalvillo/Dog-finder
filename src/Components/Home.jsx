@@ -10,7 +10,7 @@ class Home extends Component {
     render(){
 
         var dogs = this.props.dogs.map( d => (
-            <div className="Dog col-lg-4 text-center" key={d.name}>
+            <div className="Dog col-md-4 text-center" key={d.name}>
                 <Link to={`/dog/${d.name}`}>
                     <img src={d.src} alt={d.name} />
                 </Link>
