@@ -9,9 +9,9 @@ class NavBar extends Component {
     render(){
 
         var dogs = this.props.dogs.map( d => (
-            <NavLink activeClassName="active-link" to={`/dog/${d.name}`}>
-                {d.name}
-            </NavLink>
+                <NavLink activeClassName="active-link" to={`/dog/${d.name}`}>
+                    {d.name}
+                </NavLink>
           ))
 
         return(
